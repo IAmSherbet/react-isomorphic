@@ -14,6 +14,9 @@ module.exports = {
         test: /\.js$/,
         include: CLIENT_DIR,
         loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
       },
       {
         test: /\.less$/,
